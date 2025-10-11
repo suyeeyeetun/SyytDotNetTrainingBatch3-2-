@@ -1,7 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using System.Data;
 
-Console.WriteLine("Hello, World!");
+//Console.WriteLine("Hello, World!");
 
 SqlConnectionStringBuilder sqlConnectionStringBuilder = new SqlConnectionStringBuilder();
 sqlConnectionStringBuilder.DataSource = "."; 
