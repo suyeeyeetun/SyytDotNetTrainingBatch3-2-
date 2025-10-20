@@ -129,7 +129,7 @@ class Prada : Perfume
 {
     public override void smell()
     {
-        Console.WriteLine("Smell like floral");
+        Console.WriteLine("It smells floral");
     }
 }
 class Program
