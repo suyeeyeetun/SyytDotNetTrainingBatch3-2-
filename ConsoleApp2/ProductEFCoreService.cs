@@ -16,7 +16,7 @@ namespace ConsoleApp2
         //}
         public void Read()
         {
-            AppDbContext db = new AppDbContext();
+            AppDbContext1 db = new AppDbContext1();
             var lst = db.Products.ToList();
             for(int i = 0; i < lst.Count; i++)
             {
@@ -27,7 +27,7 @@ namespace ConsoleApp2
         }
         public void Create()
         {
-            AppDbContext db = new AppDbContext();
+            AppDbContext1 db = new AppDbContext1();
             var item = new Tbl_Product()
             {
                 ProductName = "Orange",
@@ -41,7 +41,7 @@ namespace ConsoleApp2
         }
         public void Update()
         {
-            AppDbContext db = new AppDbContext();
+            AppDbContext1 db = new AppDbContext1();
             var item = db.Products.Where(x => x.ProductId > 7).ToList();
             //var item = db.Products.Where(x => x.ProductId > 7).FirstOrDefault();
 
@@ -63,7 +63,7 @@ namespace ConsoleApp2
         }
         public void Delete()
         {
-            AppDbContext db = new AppDbContext();
+            AppDbContext1 db = new AppDbContext1();
             var item = db.Products.FirstOrDefault(x => x.ProductId == 4);
             item.DeleteFlag = true;
             int result = db.SaveChanges();

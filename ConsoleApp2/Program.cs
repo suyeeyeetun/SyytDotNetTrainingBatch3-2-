@@ -8,7 +8,7 @@ using ConsoleApp2;
 //productDapperService.Update();
 //productDapperService.Delete();
 
-ProductEFCoreService productEFCoreService = new ProductEFCoreService();
+ProductCategoryEFCoreService productEFCoreService = new ProductCategoryEFCoreService();
 //productEFCoreService.Read();
 //productEFCoreService.Create();
 //productEFCoreService.Update();

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext1:DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
